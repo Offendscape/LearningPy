@@ -44,3 +44,30 @@ user_loc_state = input("What state are you from? ")
 user_info = f"{user_name} is a {user_age} year old from {user_loc_city}, {user_loc_state}."
 # Now we will print the user's information to the console.
 print(user_info)
+
+# Now we will need to check if the user is old enough to buy weed from the dealer.
+# we will use an if statement to check if the user's age is greater than or equal to 21.
+# syntax for if statement: if condition:
+# the operastor we will use is the greater than or equal to operator (>=)
+if user_age >= 21:  
+    print("Damn, you look young for your age. You must be 21 or older to buy weed from me.")
+else:
+    print("Get yo ass outta here, you ain't old enough to buy weed from me.")
+
+# Now we need some dialogue options for the user to choose from.
+print("What would you like to do?")
+print("1. Buy weed")
+print("2. Talk to the dealer")
+print("3. Leave")
+
+# Now we need to ge the users input
+user_choice = input("Enter your choice (1-3): ")
+
+if user_choice == "1":
+    print("OH! So you trying to get some ganja.")
+elif user_choice == "2":
+    print(f"You chose to talk to {dealer_name}.")
+elif user_choice == "3":
+    print("Yeah get your punk ass outta here.")
+else:
+    print("Nigga that's not a valid choice. Answer 1, 2, or 3.")
